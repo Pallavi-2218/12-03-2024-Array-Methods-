@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    <script>
+        //Write a JavaScript program to make all the elements of an array as multiples of 2
+        var arr = [5,7,12,30,25,42];
+        //First method:- Using function
+        document.write("Array elements using functions:-");
+        arr.forEach(mul)
+        function mul(ele)
+        {
+            document.write(ele*2+" " );
+        }
+        document.write("<br>");
+        //Second method
+        document.write("Second method:-");
+        arr.forEach(function(e)
+        {
+            document.write(e*2 + " ");
+        }
+        )
+        document.write("<br>");
+        //Third method
+        document.write("Third method:-");
+        arr.forEach((el)=>{document.write(el*2 +" ");})
+    </script>
+</body>
+</html>

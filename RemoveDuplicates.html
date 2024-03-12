@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove dupllicates</title>
+</head>
+<body>
+    <script>
+        //JavaScript program to remove the duplicates from the list and print the remainig elements
+        var arr = [5,7,12,30,25,42,25,30];
+        var remove = [];
+        for(let a of arr)
+        {
+            if(remove.indexOf(a)==-1)
+            {
+                remove.push(a);
+            }
+        }
+        document.write(remove);
+
+    </script>
+</body>
+</html>

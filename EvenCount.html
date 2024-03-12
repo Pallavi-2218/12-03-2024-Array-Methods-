@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Count</title>
+</head>
+<body>
+    <script>
+        var arr = [5,7,12,30,25,42];
+        var count = 0;
+        //Write JavaScript program to  count the even numbers in an array
+        arr.forEach((i,index)=>
+        {
+            if(i%2==0)
+            {
+                document.write(index +"->"+i);
+                document.write("<br>");
+                count++;
+            }
+        })
+        document.write(`<br>${count} even numbers present in the array`);
+    </script>
+</body>
+</html>

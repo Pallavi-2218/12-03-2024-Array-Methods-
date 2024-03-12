@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd count</title>
+</head>
+<body>
+    <script>
+        //Write JavaScript program to  count the even numbers in an array
+        var count=0;
+        let  arr=[5,7,12,30,25,42];
+        let newarr=arr.filter((i)=>
+        {
+            if(i%2==0){
+                count++;
+                document.write(i +" ");
+            }
+        })
+        document.write(`<br>${count} even numbers present in the array`);
+    </script>
+</body>
+</html>
